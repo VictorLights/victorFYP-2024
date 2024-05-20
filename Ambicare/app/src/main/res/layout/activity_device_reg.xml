@@ -1,0 +1,76 @@
+<!-- activity_device_reg.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp"
+    tools:context=".DeviceReg">
+
+    <!-- Close button -->
+    <ImageView
+        android:id="@+id/close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:src="@drawable/ic_close"
+        android:padding="8dp"
+        android:contentDescription="Close"
+        tools:ignore="ContentDescription" />
+
+    <!-- Device ID -->
+    <EditText
+        android:id="@+id/device_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Device ID"
+        android:layout_marginTop="16dp" />
+
+    <!-- Device OTP -->
+    <EditText
+        android:id="@+id/device_OTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Device OTP"
+        android:layout_marginTop="8dp" />
+
+    <!-- Device Name -->
+    <EditText
+        android:id="@+id/device_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Device Name"
+        android:layout_marginTop="8dp" />
+
+    <!-- Radio Group -->
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <!-- Radio Buttons -->
+        <RadioButton
+            android:id="@+id/radio_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camera" />
+
+        <RadioButton
+            android:id="@+id/radio_watch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Watch" />
+    </RadioGroup>
+
+    <!-- Save Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

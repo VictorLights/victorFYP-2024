@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Devices"
+        android:icon="@drawable/baseline_devices_other_24"
+        android:id="@+id/devices"/>
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Home"
+        android:checked="true"
+        android:icon="@drawable/baseline_home_24"
+        android:id="@+id/home"/>
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Settings"
+        android:icon="@drawable/baseline_settings_24"
+        android:id="@+id/settings"/>
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Camera"
+        android:icon="@drawable/baseline_visibility_24"
+        android:id="@+id/camera"/>
+</menu>

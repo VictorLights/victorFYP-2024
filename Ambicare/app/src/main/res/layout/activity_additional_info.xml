@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".additionalInfo">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Additional Info"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/lavender"
+        android:padding="16dp"/>
+
+    <!-- Elderly Name -->
+    <TextView
+        android:id="@+id/elderly_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elderly Name"
+        android:textStyle="bold"
+        android:textColor="@color/grey"
+        android:layout_below="@id/header_text"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/elderly_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/elderly_name_label"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Elderly Gender -->
+    <TextView
+        android:id="@+id/elderly_gender_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elderly Gender"
+        android:textStyle="bold"
+        android:textColor="@color/grey"
+        android:layout_below="@id/elderly_name"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/elderly_gender_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/elderly_gender_label"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="male" />
+
+        <RadioButton
+            android:id="@+id/radio_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="female"
+            android:layout_marginStart="24dp" />
+
+    </RadioGroup>
+
+    <!-- Emergency Contact -->
+    <TextView
+        android:id="@+id/emergency_contact_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emergency Contact"
+        android:textStyle="bold"
+        android:textColor="@color/grey"
+        android:layout_below="@id/emergency_contact_name"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/emergency_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emergency_contact_label"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Emergency Contact Name -->
+    <TextView
+        android:id="@+id/emergency_contact_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emergency Contact Name"
+        android:textStyle="bold"
+        android:textColor="@color/grey"
+        android:layout_below="@id/elderly_gender_radiogroup"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/emergency_contact_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emergency_contact_name_label"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Save Button -->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save_button"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/emergency_contact"
+        android:layout_marginTop="44dp"
+        android:layout_centerHorizontal="true" android:gravity="center"
+        android:text="Save" />
+
+
+</RelativeLayout>

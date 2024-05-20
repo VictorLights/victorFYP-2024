@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="start"
+    android:padding="30dp"
+    tools:context=".OnboardFragment2">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="We provide in depth fall-detection tools"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:gravity="start"
+        android:textColor="@color/main"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Our app features precise location detection as well."
+        android:textSize="36sp"
+        android:gravity="start"
+        android:textColor="@color/lightgrey"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/onboard2"
+        android:padding="40dp"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
